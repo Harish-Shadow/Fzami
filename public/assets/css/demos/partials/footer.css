@@ -1,0 +1,20 @@
+/* Footer */
+#footer a:not(.btn):not(.no-footer-css) {
+    color: #FFF;
+}
+
+#footer .btn-social {
+    min-width: 190px;
+}
+
+#footer .btn-social:not(:hover):not(:active) {
+    background-color: #000;
+}
+
+@media (max-width: 991px) {
+    #footer .cascading-images-wrapper {
+            padding: 4rem 8rem 0 !important;
+            position: relative;
+            left: -10%;
+    }
+}

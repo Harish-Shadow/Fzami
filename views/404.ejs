@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Mirrored from themazine.com/html/sap/preview/404.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 22 Jul 2024 06:45:30 GMT -->
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="shortcut icon" href="assets/media/titleLogo.png" type="image/x-icon" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" crossorigin="anonymous" />
+  <link rel="stylesheet" href="assets/css/style.css" crossorigin="anonymous" />
+
+  <title>404 page not found - Revonnate</title>
+</head>
+
+<body class="position-relative d-flex flex-column mih-100vh">
+  <%- include("./partials/header") -%>
+
+    <section class="row mx-0 page-404-section bgcolor-purple-theme flex-grow-1 align-items-center">
+      <div class="container maw-555px py-sm-60px text-center">
+        <h1 class="fz-172 fz-sm-100 font-poppins fw-700 lh-1 text-white mt-200px mt-md-0px">
+          404
+        </h1>
+        <h2 class="fz-50 fz-sm-24 font-poppins text-white fw-500 mb-30px mb-md-15px">
+          Looks like you’re lost
+        </h2>
+        <p class="font-poppins fz-16 fz-sm-14 lh-1-5 text-white mb-40px mb-md-20px">
+          Lorem Ipsum is that it has a more-or-less normal distribution of
+          letters, as opposed to using Content here
+        </p>
+        <a href="#" class="btn btn-primary-gradient btn-primary-gradient-style bdrs-10px border-0 mb-125px mb-md-0px">Go
+          back main page</a>
+      </div>
+    </section>
+
+    <!--Search Popup-->
+    <div id="search-popup" class="search-popup">
+      <div class="close-search theme-btn">
+        <span class="fas fa-times"></span>
+      </div>
+      <div class="popup-inner">
+        <div class="overlay-layer"></div>
+        <div class="search-form">
+          <form method="post" action="https://themazine.com/html/sap/preview/index.html">
+            <div class="form-group">
+              <fieldset>
+                <input type="search" class="form-control" name="search-input" value="" placeholder="Search Here"
+                  required="" />
+                <input type="submit" value="Search Now!" class="theme-btn" />
+              </fieldset>
+            </div>
+          </form>
+
+          <br />
+          <h3>Recent Search Keywords</h3>
+          <ul class="recent-searches">
+            <li><a href="#">Software</a></li>
+            <li><a href="#">Sass</a></li>
+            <li><a href="#">Less</a></li>
+            <li><a href="#">Css</a></li>
+            <li><a href="#">Jquery</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      .search-popup {
+        position: fixed;
+        left: 0px;
+        bottom: -100%;
+        width: 100%;
+        height: 100%;
+        z-index: 999999999999999;
+        visibility: hidden;
+        opacity: 0;
+        overflow: auto;
+        transform: scale(0, 0);
+        background: rgba(0, 0, 0, 0.8);
+        transition: all 700ms ease;
+        -moz-transition: all 700ms ease;
+        -webkit-transition: all 700ms ease;
+        -ms-transition: all 700ms ease;
+        -o-transition: all 700ms ease;
+      }
+
+      .search-popup .overlay-layer {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        display: block;
+      }
+
+      .search-popup.popup-visible {
+        bottom: 0;
+        visibility: visible;
+        opacity: 1;
+        transform: scale(1, 1);
+      }
+
+      .search-popup .close-search {
+        position: absolute;
+        right: 25px;
+        top: 25px;
+        font-size: 22px;
+        color: #ffffff;
+        cursor: pointer;
+        z-index: 5;
+      }
+
+      .search-popup .close-search:hover {
+        opacity: 0.7;
+      }
+
+      .search-popup .search-form {
+        position: relative;
+        padding: 0px 15px 0px;
+        max-width: 1024px;
+        margin: 0 auto;
+        margin-top: 200px;
+      }
+
+      .search-popup .search-form fieldset {
+        position: relative;
+        border: 7px solid rgba(255, 255, 255, 0.5);
+        border-radius: 12px;
+        -webkit-border-radius: 12px;
+        -ms-border-radius: 12px;
+        -o-border-radius: 12px;
+        -moz-border-radius: 12px;
+      }
+
+      .search-popup .search-form fieldset input[type="search"] {
+        position: relative;
+        height: 70px;
+        padding: 20px 220px 20px 30px;
+        background: #ffffff;
+        line-height: 30px;
+        font-size: 24px;
+        color: #233145;
+        border-radius: 7px;
+        -webkit-border-radius: 7px;
+        -ms-border-radius: 7px;
+        -o-border-radius: 7px;
+        -moz-border-radius: 7px;
+      }
+
+      .search-popup .search-form fieldset input[type="submit"] {
+        position: absolute;
+        display: block;
+        right: 0px;
+        top: 0px;
+        text-align: center;
+        width: 220px;
+        height: 70px;
+        padding: 20px 10px 20px 10px;
+        color: #ffffff !important;
+        background-color: #222222;
+        line-height: 30px;
+        font-size: 20px;
+        color: #233145;
+        cursor: pointer;
+        text-transform: uppercase;
+        border-radius: 0px 7px 7px 0px;
+        -moz-border-radius: 0px 7px 7px 0px;
+        -ms-border-radius: 0px 7px 7px 0px;
+        -o-border-radius: 0px 7px 7px 0px;
+        -webkit-border-radius: 0px 7px 7px 0px;
+      }
+
+      .search-popup .search-form fieldset input[type="submit"]:hover {
+        background: #000000;
+      }
+
+      .search-popup h3 {
+        font-size: 24px;
+        color: #ffffff;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .search-popup .recent-searches {
+        font-size: 16px;
+        color: #ffffff;
+        text-align: center;
+      }
+
+      .search-popup .recent-searches li {
+        display: inline-block;
+        margin: 0px 10px 10px 0px;
+      }
+
+      .search-popup .recent-searches li a {
+        display: block;
+        line-height: 24px;
+        border: 1px solid #ffffff;
+        padding: 7px 15px;
+        color: #ffffff;
+        border-radius: 3px;
+      }
+
+      .search-popup .recent-searches li a:hover {
+        color: #000000;
+        border-color: #ffffff;
+        background-color: #ffffff;
+      }
+
+      @media only screen and (max-width: 599px) {
+        .search-popup .search-form fieldset input[type="search"] {
+          padding-right: 20px;
+        }
+
+        .search-popup .search-form fieldset input[type="submit"] {
+          position: relative;
+          width: 100%;
+        }
+      }
+    </style>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://kit.fontawesome.com/41dcbbb4c1.js" crossorigin="anonymous"></script>
+    <script src="assets/js/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+    <script src="assets/js/popper.min.js" crossorigin="anonymous"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js" crossorigin="anonymous"></script>
+</body>
+
+<!-- Mirrored from themazine.com/html/sap/preview/404.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 22 Jul 2024 06:45:30 GMT -->
+
+</html>
