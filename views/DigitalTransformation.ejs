@@ -1,214 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
 
-		<!-- Basic -->
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
 
-		<title>Digital Transformation</title>	
+	<!-- Basic -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<meta name="keywords" content="WebSite Template" />
-		<meta name="description" content="Porto - Multipurpose Website Template">
-		<meta name="author" content="okler.net">
+	<title>Digital Transformation</title>
 
-		<!-- Favicon -->
-		<link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
-		<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+	<meta name="keywords" content="WebSite Template" />
+	<meta name="description" content="Porto - Multipurpose Website Template">
+	<meta name="author" content="okler.net">
 
-		<!-- Mobile Metas -->
-		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 
-		<!-- Web Fonts  -->
-		<link id="googleFonts" href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" type="text/css">
+	<!-- Mobile Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
 
-		<!-- Vendor CSS -->
-		<link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
-		<link rel="stylesheet" href="assets/vendor/fontawesome-free/css/all.min.css">
-		<link rel="stylesheet" href="assets/vendor/animate/animate.compat.css">
-		<link rel="stylesheet" href="assets/vendor/simple-line-icons/css/simple-line-icons.min.css">
-		<link rel="stylesheet" href="assets/vendor/owl.carousel/assets/owl.carousel.min.css">
-		<link rel="stylesheet" href="assets/vendor/owl.carousel/assets/owl.theme.default.min.css">
-		<link rel="stylesheet" href="assets/vendor/magnific-popup/magnific-popup.min.css">
+	<!-- Web Fonts  -->
+	<link id="googleFonts"
+		href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		rel="stylesheet" type="text/css">
 
-		<!-- Theme CSS -->
-		<link rel="stylesheet" href="assets/css/theme.css">
-		<link rel="stylesheet" href="assets/css/theme-elements.css">
-		<link rel="stylesheet" href="assets/css/theme-blog.css">
-		<link rel="stylesheet" href="assets/css/theme-shop.css">
+	<!-- Vendor CSS -->
+	<link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/vendor/fontawesome-free/css/all.min.css">
+	<link rel="stylesheet" href="assets/vendor/animate/animate.compat.css">
+	<link rel="stylesheet" href="assets/vendor/simple-line-icons/css/simple-line-icons.min.css">
+	<link rel="stylesheet" href="assets/vendor/owl.carousel/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="assets/vendor/owl.carousel/assets/owl.theme.default.min.css">
+	<link rel="stylesheet" href="assets/vendor/magnific-popup/magnific-popup.min.css">
 
-		<!-- Demo CSS -->
-		<link rel="stylesheet" href="assets/css/demos/demo-marketing-1.css">
+	<!-- Theme CSS -->
+	<link rel="stylesheet" href="assets/css/theme.css">
+	<link rel="stylesheet" href="assets/css/theme-elements.css">
+	<link rel="stylesheet" href="assets/css/theme-blog.css">
+	<link rel="stylesheet" href="assets/css/theme-shop.css">
 
-		<!-- Skin CSS -->
-		<link id="skinCSS" rel="stylesheet" href="assets/css/skins/skin-marketing-1.css">
+	<!-- Demo CSS -->
+	<link rel="stylesheet" href="assets/css/demos/demo-marketing-1.css">
 
-		<!-- Theme Custom CSS -->
-		<link rel="stylesheet" href="assets/css/custom.css">
+	<!-- Skin CSS -->
+	<link id="skinCSS" rel="stylesheet" href="assets/css/skins/skin-marketing-1.css">
 
-	</head>
-	<body data-plugin-cursor-effect>
-		<div class="body">
+	<!-- Theme Custom CSS -->
+	<link rel="stylesheet" href="assets/css/custom.css">
+	<style>
+		.img-fluid {
+			max-width: 100%;
+			/* Ensures the image is responsive */
+			height: auto;
+			/* Maintains aspect ratio */
+			transition: transform 0.3s ease;
+			/* Smooth scaling effect on hover */
+		}
 
-			<!--Header-->
-			<%- include("./partials/header") -%>
+		.img-fluid:hover {
+			transform: scale(1.1);
+			/* Scale the image slightly on hover */
+		}
+
+		.idf {
+			border-radius: 15px;
+			/* Optional: add rounded corners */
+			box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+			/* Optional: add shadow for depth */
+			margin-bottom: 20px;
+			/* Adds spacing below the image */
+		}
+	</style>
+</head>
+
+<body data-plugin-cursor-effect>
+	<div class="body">
+
+		<!--Header-->
+		<%- include("./partials/header") -%>
 			<!--end-Header-->
-			
+
 			<div role="main" class="main">
 
 				<!-- banner -->
-				<section class="page-header page-header-modern page-header-background parallax mt-0" data-plugin-parallax data-plugin-options="{'speed': 1.2}" data-image-src="assets/img/demos/marketing-1/generic/generic-8.jpg">
+				<section class="page-header page-header-modern page-header-background parallax mt-0"
+					data-plugin-parallax data-plugin-options="{'speed': 1.2}"
+					data-image-src="assets/img/demos/marketing-1/generic/generic-8.jpg">
 					<div class="container">
 						<div class="row py-5">
 							<div class="col align-self-center p-static">
-								<div data-plugin-float-element data-plugin-options="{'minWindowWidth': 992, 'startPos': 'bottom', 'speed': 0.4, 'transition': true, 'transitionDuration': 1000}">
+								<div data-plugin-float-element
+									data-plugin-options="{'minWindowWidth': 992, 'startPos': 'bottom', 'speed': 0.4, 'transition': true, 'transitionDuration': 1000}">
 									<ul class="breadcrumb d-flex text-4-5">
-										<li><a href="/about" class="text-color-dark text-color-hover-primary text-transform-none text-decoration-none">Digital Transformation</a></li>
-										<li class="active text-color-primary text-transform-none">Digital Transformation</li>
+										<li><a href="/about"
+												class="text-color-dark text-color-hover-primary text-transform-none text-decoration-none">Digital
+												Transformation</a></li>
+										<li class="active text-color-primary text-transform-none">Digital Transformation
+										</li>
 									</ul>
-									<h1 class="text-color-dark font-weight-semi-bold text-lg-12 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="0"><mark class="bg-transparent d-inline-block p-0 mark mark-color mark-color-tertiary">Digital Transformation</mark></h1>
+									<h1 class="text-color-dark font-weight-semi-bold text-lg-12 appear-animation"
+										data-appear-animation="fadeIn" data-appear-animation-delay="0"><mark
+											class="bg-transparent d-inline-block p-0 mark mark-color mark-color-tertiary">Digital
+											Transformation</mark></h1>
 								</div>
 							</div>
 
 						</div>
 					</div>
 				</section>
-                <!-- end-banner -->
+				<!-- end-banner -->
 
 				<!-- Services -->
 				<section class="section bg-color-grey section-height-3 border-0  mb-0">
 					<div class="container">
-						
-						<div class="appear-animation pt-3" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200" >
-							<h2 class="text-9 text-lg-12 font-weight-semibold line-height-1 mb-4 pt-4 text-center" style="padding-top: 1000px;"">Services</h2>
-						</div>
+
+
 
 						<div class="row ml-3">
 							<div class="col">
 
-								<div class="row align-items-center pt-4 appear-animation" data-appear-animation="fadeInLeftShorter">
+								<div class="row align-items-center pt-4 appear-animation"
+									data-appear-animation="fadeInLeftShorter">
 									<div class="col-md-4 px-5 px-md-3">
-										<img class="img-fluid scale-2 my-4" src="assets/img/style-switcher.png" alt="style switcher" />
+										<img class="img-fluid scale-2 my-4 idf"
+											src="assets/img/digital/Digital Strategy & Consulting.png"
+											alt="style switcher" />
 									</div>
 									<div class="col-md-8 ps-md-5">
-										<h2 class="font-weight-normal text-6 mb-3"><strong class="font-weight-extra-bold">Digital </strong> Strategy & Consulting</h2>
-										<p class="text-4">We offer expert guidance and practical strategies to assist businesses in defining their digital goals and creating a clear transformation roadmap. Our consulting services emphasize aligning technology with business objectives to drive sustainable growth and operational efficiency.</p>
-
-									</div>
-								</div>
-
-								<hr class="solid my-5">
-
-								<div class="row align-items-center pt-5 pb-3 appear-animation" data-appear-animation="fadeInRightShorter">
-									<div class="col-md-8 pe-md-5 mb-5 mb-md-0">
-										<h2 class="font-weight-normal text-6 mb-3"><strong class="font-weight-extra-bold">Technology</strong> Implementation</h2>
-										<p class="text-4">At Revonnate, we specialize in implementing cutting-edge technologies that fuel digital transformation. Whether it's cloud computing, data analytics, AI, or IoT, our implementation services ensure smooth integration and maximum performance of these technologies within your current infrastructure.</p>
-										
-									</div>
-									<div class="col-md-4 px-5 px-md-3">
-										<img class="img-fluid scale-2 my-4" src="assets/img/style-switcher.png" alt="style switcher" />
-									</div>
-								</div>
-								<div class="row align-items-center pt-4 appear-animation" data-appear-animation="fadeInLeftShorter">
-									<div class="col-md-4 px-5 px-md-3">
-										<img class="img-fluid scale-2 my-4" src="assets/img/style-switcher.png" alt="style switcher" />
-									</div>
-									<div class="col-md-8 ps-md-5">
-										<h2 class="font-weight-normal text-6 mb-3"><strong class="font-weight-extra-bold">Digital </strong>Experience Design
+										<h2 class="font-weight-normal text-6 mb-3"><strong
+												class="font-weight-extra-bold">Digital </strong> Strategy & Consulting
 										</h2>
-										<p class="text-4">We create intuitive and immersive digital experiences that connect with users. Our design team prioritizes user-centric principles, ensuring that every digital interaction is optimized for ease of use and meaningful engagement.</p>
+										<p class="text-4">We offer expert guidance and actionable strategies to help
+											businesses establish digital objectives and create a clear transformation
+											roadmap. Our consulting services align technology with business goals for
+											sustainable growth and efficiency.</p>
 
 									</div>
 								</div>
 
 								<hr class="solid my-5">
 
-								<div class="row align-items-center pt-5 pb-3 appear-animation" data-appear-animation="fadeInRightShorter">
+								<div class="row align-items-center pt-5 pb-3 appear-animation"
+									data-appear-animation="fadeInRightShorter">
 									<div class="col-md-8 pe-md-5 mb-5 mb-md-0">
-										<h2 class="font-weight-normal text-6 mb-3"><strong class="font-weight-extra-bold">Technology</strong> Implementation</h2>
-										<p class="text-4">At Revonnate, we specialize in implementing cutting-edge technologies that fuel digital transformation. Whether it's cloud computing, data analytics, AI, or IoT, our implementation services ensure smooth integration and maximum performance of these technologies within your current infrastructure.</p>
-										
+										<h2 class="font-weight-normal text-6 mb-3"><strong
+												class="font-weight-extra-bold">Technology</strong> Implementation</h2>
+										<p class="text-4">Revonnate specializes in deploying advanced technologies that
+											facilitate digital transformation. Our services encompass cloud computing,
+											data analytics, AI, and IoT, ensuring seamless integration and optimal
+											performance within existing infrastructures.</p>
+
 									</div>
 									<div class="col-md-4 px-5 px-md-3">
-										<img class="img-fluid scale-2 my-4" src="assets/img/style-switcher.png" alt="style switcher" />
+										<img class="img-fluid scale-2 my-4 idf"
+											src="assets/img/digital/Technology Implementation.png"
+											alt="style switcher" />
 									</div>
 								</div>
-
-								<div class="row align-items-center pt-4 appear-animation" data-appear-animation="fadeInLeftShorter">
+								<div class="row align-items-center pt-4 appear-animation"
+									data-appear-animation="fadeInLeftShorter">
 									<div class="col-md-4 px-5 px-md-3">
-										<img class="img-fluid scale-2 my-4" src="assets/img/style-switcher.png" alt="style switcher" />
+										<img class="img-fluid scale-2 my-4 idf"
+											src="assets/img/digital/Process Automation.png" alt="style switcher" />
 									</div>
 									<div class="col-md-8 ps-md-5">
-										<h2 class="font-weight-normal text-6 mb-3"><strong class="font-weight-extra-bold">Digital </strong> Strategy & Consulting</h2>
-										<p class="text-4">We offer expert guidance and practical strategies to assist businesses in defining their digital goals and creating a clear transformation roadmap. Our consulting services emphasize aligning technology with business objectives to drive sustainable growth and operational efficiency.</p>
+										<h2 class="font-weight-normal text-6 mb-3"><strong
+												class="font-weight-extra-bold">Process </strong>Automation
+										</h2>
+										<p class="text-4">Our process automation solutions enhance business operations
+											by minimizing manual tasks and increasing productivity. Utilizing
+											cutting-edge tools, we help organizations achieve improved accuracy,
+											efficiency, and cost savings.</p>
 
 									</div>
 								</div>
 
 								<hr class="solid my-5">
 
-								<div class="row align-items-center pt-5 pb-3 appear-animation" data-appear-animation="fadeInRightShorter">
+								<div class="row align-items-center pt-5 pb-3 appear-animation"
+									data-appear-animation="fadeInRightShorter">
 									<div class="col-md-8 pe-md-5 mb-5 mb-md-0">
-										<h2 class="font-weight-normal text-6 mb-3"><strong class="font-weight-extra-bold">Technology</strong> Implementation</h2>
-										<p class="text-4">At Revonnate, we specialize in implementing cutting-edge technologies that fuel digital transformation. Whether it's cloud computing, data analytics, AI, or IoT, our implementation services ensure smooth integration and maximum performance of these technologies within your current infrastructure.</p>
-										
+										<h2 class="font-weight-normal text-6 mb-3"><strong
+												class="font-weight-extra-bold">Digital</strong> Experience Design</h2>
+										<p class="text-4">We create intuitive and engaging digital experiences that
+											resonate with users. Our design team prioritizes user-centric principles,
+											optimizing every digital touchpoint for usability and impact.</p>
+
 									</div>
 									<div class="col-md-4 px-5 px-md-3">
-										<img class="img-fluid scale-2 my-4" src="assets/img/style-switcher.png" alt="style switcher" />
+										<img class="img-fluid scale-2 my-4 idf"
+											src="assets/img/digital/Digital experience design.png"
+											alt="style switcher" />
 									</div>
 								</div>
+
+								<div class="row align-items-center pt-4 appear-animation"
+									data-appear-animation="fadeInLeftShorter">
+									<div class="col-md-4 px-5 px-md-3">
+										<img class="img-fluid scale-2 my-4 idf "
+											src="assets/img/digital/Cybersecurity Solutions.png" alt="style switcher" />
+									</div>
+									<div class="col-md-8 ps-md-5">
+										<h2 class="font-weight-normal text-6 mb-3"><strong
+												class="font-weight-extra-bold">Cybersecurity </strong> Solutions</h2>
+										<p class="text-4">In today’s digital landscape, protecting your business from
+											cyber threats is essential. Revonnate provides comprehensive cybersecurity
+											services, including risk assessment, threat mitigation, and ongoing
+											monitoring, to safeguard your digital assets and ensure compliance with
+											industry standards.</p>
+
+									</div>
+								</div>
+
+								<hr class="solid my-5">
+
+
 							</div>
 						</div>
 					</div>
 				</section>
 				<!-- end-Services -->
-				
+
 				<!-- CTA -->
-		
+
 				<div class="custom-bg-gradient-1 pt-5 py-1">
 					<div class="container ">
 						<div class="row  justify-content-center">
 							<div class="col-lg-8 text-center">
-								<div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="0">
-							
-									<h4 class="custom-font-1 mb-0">We handle every aspect of your marketing journey with expertise and dedication</h4>
-									<a href="#" class="text-dark text-hover-primary text-6 line-height-10 text-decoration-underline-2 border-width-2 d-inline-flex mt-5 font-weight-semibold mb-2">Let's Talk!</a>
+								<div class="appear-animation" data-appear-animation="fadeInUpShorter"
+									data-appear-animation-delay="0">
+
+									<h4 class="custom-font-1 mb-0">We handle every aspect of your marketing journey with
+										expertise and dedication</h4>
+									<a href="#"
+										class="text-dark text-hover-primary text-6 line-height-10 text-decoration-underline-2 border-width-2 d-inline-flex mt-5 font-weight-semibold mb-2">Let's
+										Talk!</a>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 				<!-- end-CTA -->
-			<!-- footer -->
-			<%- include("./partials/footer") -%>
+				<!-- footer -->
+				<%- include("./partials/footer") -%>
 
-			<!-- end-footer -->
-		</div>
+					<!-- end-footer -->
+			</div>
 
-		<a class="style-switcher-open-loader" href="#" data-base-path="" data-skin-src="master/less/skin-marketing-1.less" data-bs-toggle="tooltip" data-bs-animation="false" data-bs-placement="right" title="Style Switcher" aria-label="Style Switcher"><i class="fas fa-cogs"></i><div class="style-switcher-tooltip"><strong>Style Switcher</strong><p>Check out different color options and styles.</p></div></a>
+			<a class="style-switcher-open-loader" href="#" data-base-path=""
+				data-skin-src="master/less/skin-marketing-1.less" data-bs-toggle="tooltip" data-bs-animation="false"
+				data-bs-placement="right" title="Style Switcher" aria-label="Style Switcher"><i class="fas fa-cogs"></i>
+				<div class="style-switcher-tooltip"><strong>Style Switcher</strong>
+					<p>Check out different color options and styles.</p>
+				</div>
+			</a>
 
-		<!-- Vendor -->
-		<script src="assets/vendor/plugins/js/plugins.min.js"></script>
-		<script src="assets/vendor/gsap/gsap.min.js"></script>
-		<script src="assets/vendor/gsap/ScrollTrigger.min.js"></script>
+			<!-- Vendor -->
+			<script src="assets/vendor/plugins/js/plugins.min.js"></script>
+			<script src="assets/vendor/gsap/gsap.min.js"></script>
+			<script src="assets/vendor/gsap/ScrollTrigger.min.js"></script>
 
-		<!-- Theme Base, Components and Settings -->
-		<script src="assets/js/theme.js"></script>
+			<!-- Theme Base, Components and Settings -->
+			<script src="assets/js/theme.js"></script>
 
-		<!-- Demo -->
-		<script src="assets/js/demos/demo-marketing-1.js"></script>
+			<!-- Demo -->
+			<script src="assets/js/demos/demo-marketing-1.js"></script>
 
-		<!-- Current Page Vendor and Views -->
-		<script src="assets/js/views/view.contact.js"></script>
+			<!-- Current Page Vendor and Views -->
+			<script src="assets/js/views/view.contact.js"></script>
 
-		<!-- Theme Custom -->
-		<script src="assets/js/custom.js"></script>
+			<!-- Theme Custom -->
+			<script src="assets/js/custom.js"></script>
 
-		<!-- Theme Initialization Files -->
-		<script src="assets/js/theme.init.js"></script>
+			<!-- Theme Initialization Files -->
+			<script src="assets/js/theme.init.js"></script>
 
-	<!-- Examples -->
-		<script src="assets/js/examples/examples.animations.js"></script>	
+			<!-- Examples -->
+			<script src="assets/js/examples/examples.animations.js"></script>
 
-	</body>
+</body>
+
 </html>
