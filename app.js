@@ -28,6 +28,7 @@ app.get("/IndustrySolutions", (req, res) => res.render("IndustrySolutions"));
 app.get("/IT", (req, res) => res.render("IT"));
 app.get("/sevices", (req, res) => res.render("sevices"));
 app.get("/privecy", (req, res) => res.render("privacey"));
+app.get("/404", (req, res) => res.render("404"));
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.post("/contact1", async (req, res) => {

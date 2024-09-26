@@ -1,234 +1,468 @@
-<!DOCTYPE html>
-<html lang="en">
-<!-- Mirrored from themazine.com/html/sap/preview/404.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 22 Jul 2024 06:45:30 GMT -->
+<!doctype html>
+<html class="no-js" lang="zxx">
 
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <link rel="shortcut icon" href="assets/media/titleLogo.png" type="image/x-icon" />
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>FZAMI-ARSH Innovations LLC | Contact Us</title>
+    <meta name="author" content="Realar">
+    <meta name="description" content="FZAMI-ARSH Innovations LLC">
+    <meta name="keywords" content="FZAMI-ARSH Innovations LLC">
+    <meta name="robots" content="INDEX,FOLLOW">
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" crossorigin="anonymous" />
-  <link rel="stylesheet" href="assets/css/style.css" crossorigin="anonymous" />
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>404 page not found - Revonnate</title>
+    <!-- Favicons - Place favicon.ico in the root directory -->
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/fav.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/fav.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/fav.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/fav.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/fav.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/fav.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/fav.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/fav.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/fav.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/fav.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/fav.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/fav.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/fav.png">
+    <link rel="manifest" href="assets/img/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/img/fav.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--==============================
+	  Google Fonts
+	============================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Outfit:wght@100..900&amp;display=swap"
+        rel="stylesheet">
+
+    <!--==============================
+	    All CSS File
+	============================== -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Fontawesome Icon -->
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+    <!-- Swiper Js -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!-- Theme Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .flag-box img {
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .flag-container {
+            display: flex;
+        }
+
+        @media (max-width:700px) {
+            .flag-container {
+                display: block;
+            }
+
+        }
+        .map-container{
+            background-color: rgb(177, 177, 177);
+        }
+        #map {
+            height: 300px;
+            width: 100%;
+        }
+    </style>
 </head>
 
-<body class="position-relative d-flex flex-column mih-100vh">
-  <%- include("./partials/header") -%>
+<body class="bg-light">
 
-    <section class="row mx-0 page-404-section bgcolor-purple-theme flex-grow-1 align-items-center">
-      <div class="container maw-555px py-sm-60px text-center">
-        <h1 class="fz-172 fz-sm-100 font-poppins fw-700 lh-1 text-white mt-200px mt-md-0px">
-          404
-        </h1>
-        <h2 class="fz-50 fz-sm-24 font-poppins text-white fw-500 mb-30px mb-md-15px">
-          Looks like you’re lost
-        </h2>
-        <p class="font-poppins fz-16 fz-sm-14 lh-1-5 text-white mb-40px mb-md-20px">
-          Lorem Ipsum is that it has a more-or-less normal distribution of
-          letters, as opposed to using Content here
-        </p>
-        <a href="#" class="btn btn-primary-gradient btn-primary-gradient-style bdrs-10px border-0 mb-125px mb-md-0px">Go
-          back main page</a>
-      </div>
-    </section>
+    <!--[if lte IE 9]>
+    	<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  	<![endif]-->
 
-    <!--Search Popup-->
-    <div id="search-popup" class="search-popup">
-      <div class="close-search theme-btn">
-        <span class="fas fa-times"></span>
-      </div>
-      <div class="popup-inner">
-        <div class="overlay-layer"></div>
-        <div class="search-form">
-          <form method="post" action="https://themazine.com/html/sap/preview/index.html">
-            <div class="form-group">
-              <fieldset>
-                <input type="search" class="form-control" name="search-input" value="" placeholder="Search Here"
-                  required="" />
-                <input type="submit" value="Search Now!" class="theme-btn" />
-              </fieldset>
-            </div>
-          </form>
 
-          <br />
-          <h3>Recent Search Keywords</h3>
-          <ul class="recent-searches">
-            <li><a href="#">Software</a></li>
-            <li><a href="#">Sass</a></li>
-            <li><a href="#">Less</a></li>
-            <li><a href="#">Css</a></li>
-            <li><a href="#">Jquery</a></li>
-          </ul>
-        </div>
-      </div>
+    <!--********************************
+   		Code Start From Here 
+	******************************** -->
+    <div class="cursor-follower"></div>
+
+    <!-- slider drag cursor -->
+    <div class="slider-drag-cursor"><i class="fas fa-angle-left me-2"></i> DRAG <i class="fas fa-angle-right ms-2"></i>
     </div>
 
-    <style>
-      .search-popup {
-        position: fixed;
-        left: 0px;
-        bottom: -100%;
-        width: 100%;
-        height: 100%;
-        z-index: 999999999999999;
-        visibility: hidden;
-        opacity: 0;
-        overflow: auto;
-        transform: scale(0, 0);
-        background: rgba(0, 0, 0, 0.8);
-        transition: all 700ms ease;
-        -moz-transition: all 700ms ease;
-        -webkit-transition: all 700ms ease;
-        -ms-transition: all 700ms ease;
-        -o-transition: all 700ms ease;
-      }
+    <!--==============================
+     Preloader
+  ==============================-->
+    <div id="preloader" class="preloader ">
+        <div id="loader" class="th-preloader">
+            <div class="animation-preloader">
+                <div class="txt-loading">
+                    <span preloader-text="F" class="characters">F</span>
 
-      .search-popup .overlay-layer {
-        position: absolute;
-        left: 0px;
-        top: 0px;
-        right: 0px;
-        bottom: 0px;
-        display: block;
-      }
+                    <span preloader-text="Z" class="characters">Z</span>
 
-      .search-popup.popup-visible {
-        bottom: 0;
-        visibility: visible;
-        opacity: 1;
-        transform: scale(1, 1);
-      }
+                    <span preloader-text="A" class="characters">A</span>
 
-      .search-popup .close-search {
-        position: absolute;
-        right: 25px;
-        top: 25px;
-        font-size: 22px;
-        color: #ffffff;
-        cursor: pointer;
-        z-index: 5;
-      }
+                    <span preloader-text="M" class="characters">M</span>
 
-      .search-popup .close-search:hover {
-        opacity: 0.7;
-      }
+                    <span preloader-text="I" class="characters">I</span>
 
-      .search-popup .search-form {
-        position: relative;
-        padding: 0px 15px 0px;
-        max-width: 1024px;
-        margin: 0 auto;
-        margin-top: 200px;
-      }
+                    <span preloader-text="-" class="characters">-</span>
 
-      .search-popup .search-form fieldset {
-        position: relative;
-        border: 7px solid rgba(255, 255, 255, 0.5);
-        border-radius: 12px;
-        -webkit-border-radius: 12px;
-        -ms-border-radius: 12px;
-        -o-border-radius: 12px;
-        -moz-border-radius: 12px;
-      }
+                    <span preloader-text="A" class="characters">A</span>
 
-      .search-popup .search-form fieldset input[type="search"] {
-        position: relative;
-        height: 70px;
-        padding: 20px 220px 20px 30px;
-        background: #ffffff;
-        line-height: 30px;
-        font-size: 24px;
-        color: #233145;
-        border-radius: 7px;
-        -webkit-border-radius: 7px;
-        -ms-border-radius: 7px;
-        -o-border-radius: 7px;
-        -moz-border-radius: 7px;
-      }
+                    <span preloader-text="R" class="characters">R</span>
 
-      .search-popup .search-form fieldset input[type="submit"] {
-        position: absolute;
-        display: block;
-        right: 0px;
-        top: 0px;
-        text-align: center;
-        width: 220px;
-        height: 70px;
-        padding: 20px 10px 20px 10px;
-        color: #ffffff !important;
-        background-color: #222222;
-        line-height: 30px;
-        font-size: 20px;
-        color: #233145;
-        cursor: pointer;
-        text-transform: uppercase;
-        border-radius: 0px 7px 7px 0px;
-        -moz-border-radius: 0px 7px 7px 0px;
-        -ms-border-radius: 0px 7px 7px 0px;
-        -o-border-radius: 0px 7px 7px 0px;
-        -webkit-border-radius: 0px 7px 7px 0px;
-      }
+                    <span preloader-text="S" class="characters">S</span>
 
-      .search-popup .search-form fieldset input[type="submit"]:hover {
-        background: #000000;
-      }
+                    <span preloader-text="H" class="characters">H</span>
 
-      .search-popup h3 {
-        font-size: 24px;
-        color: #ffffff;
-        margin-bottom: 20px;
-        text-align: center;
-      }
+                </div>
+            </div>
+        </div>
+    </div> <!--==============================
+    Mobile Menu
+  ============================== -->
 
-      .search-popup .recent-searches {
-        font-size: 16px;
-        color: #ffffff;
-        text-align: center;
-      }
+    <!--==============================
+	Header Area
+==============================-->
 
-      .search-popup .recent-searches li {
-        display: inline-block;
-        margin: 0px 10px 10px 0px;
-      }
+    <%- include("./partials/header") -%>
 
-      .search-popup .recent-searches li a {
-        display: block;
-        line-height: 24px;
-        border: 1px solid #ffffff;
-        padding: 7px 15px;
-        color: #ffffff;
-        border-radius: 3px;
-      }
+        <!--==============================
+    Breadcumb
+============================== -->
+        <div class="breadcumb-wrapper " data-bg-src="assets/img/bg/breadcumb-bg.jpg">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-9" style="padding-top:90px;align-items:center;">
+                        <div class="breadcumb-content">
+                            <h1 class="breadcumb-title">Contact Us</h1>
+                            <ul class="breadcumb-menu">
+                                <li><a href="/">Home</a></li>
+                                <li>Contact Us</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--==============================
+Contact Area  
+==============================-->
+        <div class="space">
+            <div class="container">
+                <div class="title-area text-center">
+                    <span class="sub-title">Get In Touch</span>
+                    <h2 class="sec-title text-theme">Our Contact Information</h2>
+                    <p class="mb-0 text-theme">For more information about our global operations or to get in touch with
+                        one of our international offices, please contact us. We are dedicated to serving you with
+                        excellence, wherever you are in the world.</p>
+                </div>
+                <div class="row gy-4 justify-content-center">
+                    <!-- <div class="row gy-4 justify-content-center">
+                <div class="col-xl-4 col-lg-6">
+                    <div class="about-contact-grid style2">
+                        <div class="about-contact-icon">
+                            <i class="fal fa-location-dot"></i>
+                        </div>
+                        <div class="about-contact-details">
+                            <h6 class="about-contact-details-title">Our Address</h6>
+                            <p class="about-contact-details-text">2690 Hiltona Street Victoria</p>
+                            <p class="about-contact-details-text">Road, New York, Canada</p>
+                        </div>
+                    </div>
+                </div> -->
+                    <!-- <div class="col-xl-4 col-lg-6">
+                    <div class="about-contact-grid style2">
+                        <div class="about-contact-icon">
+                            <i class="fal fa-phone"></i>
+                        </div>
+                        <div class="about-contact-details">
+                            <h6 class="about-contact-details-title">Phone Number</h6>
+                            <p class="about-contact-details-text"><a href="tel:01234567890">(+00) 123-456-7890
+                            </a></p>
+                         
+                        </div>
+                    </div>
+                </div> -->
+                    <div style="width: 100%; margin: 0 auto; padding: 20px;;margin-top:30px">
+                        <h2 style="color: #2c3e50; margin-bottom: 20px; text-align: center;">Our Address</h2>
 
-      .search-popup .recent-searches li a:hover {
-        color: #000000;
-        border-color: #ffffff;
-        background-color: #ffffff;
-      }
+                        <div
+                            style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px; padding-top:30px ;">
+                            <div
+                                style="flex: 1; min-width: 300px; padding: 20px; border: 2px solid #2c3e50; border-radius: 12px; ">
+                                <h3 style="color: #34495e; margin-bottom: 10px; text-align: center;">India</h3>
+                                <p style="color: #555;font-size: large;text-align: center;">Fzami Arsh Innovations
+                                    LLP<br />
+                                    Alapatt Heritage Building<br />
+                                    2nd Floor, MG Road,<br />
+                                    Kochi - 682035
 
-      @media only screen and (max-width: 599px) {
-        .search-popup .search-form fieldset input[type="search"] {
-          padding-right: 20px;
-        }
+                                </p>
+                            </div>
 
-        .search-popup .search-form fieldset input[type="submit"] {
-          position: relative;
-          width: 100%;
-        }
-      }
-    </style>
+                            <div
+                                style="flex: 1; min-width: 300px; padding: 20px; border: 2px solid #2c3e50; border-radius: 12px; ">
+                                <h3 style="color: #34495e; margin-bottom: 10px; text-align: center;">Dubai</h3>
+                                <p style="color: #555;font-size: large; text-align: center;">
+                                    Fzami Arsh Innovations,<br />
+                                    FZCODubai Airport Free Zone
+                                    Dubai,<br /> United Arab Emirates
+                                </p>
+                            </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://kit.fontawesome.com/41dcbbb4c1.js" crossorigin="anonymous"></script>
-    <script src="assets/js/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
-    <script src="assets/js/popper.min.js" crossorigin="anonymous"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js" crossorigin="anonymous"></script>
+                            <div
+                                style="flex: 1; min-width: 300px; padding: 20px; border: 2px solid #2c3e50; border-radius: 12px;">
+                                <h3 style="color: #34495e; margin-bottom: 10px; text-align: center;">UK</h3>
+                                <p style="color: #555;font-size: large;text-align: center;">
+                                    Fzami Arsh Innovation LTD <br/>
+                                    128 City Road,London,<br />
+                                    United Kingdom,<br />EC1V 2NX
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add Flags -->
+
+                    <div class="row">
+                        <h2 style="color: #2c3e50; margin-bottom: 20px; text-align: center;">Our Global Presence</h2>
+                        <div class="flag-container">
+                            <div class="p-3 flag-box">
+                                <img src="/assets/img/flags/saudi.jpg" alt="saudi" style="width: 250px;height: 80x;" />
+                                <h6 class="m-0 p-0 text-center">RIYADH,SAUDI</h6>
+                            </div>
+                            <div class="p-3 flag-box">
+                                <img src="/assets/img/flags/dubai.jpg" alt="dubai" style="width: 250px;height: 80x;" />
+                                <h6 class="m-0 p-0 text-center">DUBAI,UAE</h6>
+                            </div>
+                            <div class="p-3 flag-box">
+                                <img src="/assets/img/flags/uk.jpg" alt="uk" style="width: 250px;height: 80x;" />
+                                <h6 class="m-0 p-0 text-center">LONDON,UK</h6>
+                            </div>
+                            <div class="p-3 flag-box">
+                                <img src="/assets/img/flags/india.jpg" alt="India" style="width: 250px;height: 80x;" />
+                                <h6 class="m-0 p-0 text-center">KOCHI,INDIA</h6>
+                            </div>
+                            <div class="p-3 flag-box">
+                                <img src="/assets/img/flags/singapore.jpg" alt="singapore"
+                                    style="width: 250px;height: 80x;" />
+                                <h6 class="m-0 p-0 text-center">SINGAPORE</h6>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- <div class="col-xl-4 col-lg-6">
+                    <div class="about-contact-grid style2">
+                        <div class="about-contact-icon">
+                            <i class="fal fa-envelope"></i>
+                        </div>
+                        <div class="about-contact-details">
+                            <h6 class="about-contact-details-title">Email Address</h6>
+                            <p class="about-contact-details-text"><a href="mailto:admin@fzamiarsh.com">
+                                admin@fzamiarsh.com</a></p>
+                            <!-- <p class="about-contact-details-text"><a href="mailto:support24@realar.com">support24@realar.com</a></p> -->
+                    <!-- </div>
+                    </div> -->
+                    <!-- </div> -->
+                </div>
+
+            </div>
+        </div>
+
+        <!--==============================
+Contact Area   
+==============================-->
+        <div class="space contact-area-3 z-index-common" data-bg-src="assets/img/bg/contact-bg-1-1.png"
+            data-overlay="title" data-opacity="3">
+            <div class="contact-bg-shape3-1 spin shape-mockup " data-bottom="5%" data-left="12%">
+                <img src="assets/img/shape/section_shape_2_1.jpg" alt="img">
+            </div>
+            <div class="container">
+                <div class="row gx-35">
+                    <div class="col-lg-12">
+                        <div class="appointment-wrap2 bg-white me-xxl-5">
+                            <h2 class="form-title text-theme">Contact Us</h2>
+                            <form id="contactForm" action="/contact1" method="POST">
+                                <div class="row">
+                                    <div class="form-group style-border style-radius col-lg-6 col-sm-12">
+                                        <input type="text" class="form-control" name="name" id="name"
+                                            placeholder="Your Name*" required>
+                                        <i class="fal fa-user"></i>
+                                    </div>
+                                    <div class="form-group style-border style-radius col-lg-6 col-sm-12">
+                                        <input type="tel" class="form-control" name="phno" id="phno"
+                                            placeholder="Your Phone Number*" required>
+                                        <i class="fal fa-phone"></i>
+                                    </div>
+                                    <div class="form-group style-border style-radius col-lg-6 col-sm-12">
+                                        <input type="email" class="form-control" name="email" id="email"
+                                            placeholder="Your Email*" required>
+                                        <i class="fal fa-envelope"></i>
+                                    </div>
+                                    <div class="form-group style-border style-radius col-lg-6 col-sm-12">
+                                        <select class="form-control" name="category" id="category" required>
+                                            <option value="" disabled selected>Select a Category*</option>
+                                            <option value="granites_and_marbles">Granites and Marbles</option>
+                                            <option value="spices_and_dry_fruits">Spices and Dry Fruits</option>
+                                            <option value="petroleum_products">Petroleum Products</option>
+                                            <option value="live_plant">Live Plants</option>
+                                        </select>
+                                        <i class="fal fa-caret-down"></i>
+                                    </div>
+                                    <div class="col-12  form-group style-border style-radius">
+                                        <i class="far fa-comments"></i>
+                                        <textarea placeholder="Type Your Message" class="form-control" name="message"
+                                            required></textarea>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <div class="form-btn mt-4 ">
+                                            <button type="submit" class="th-btn">Submit Message <span
+                                                    class="btn-icon"><img src="assets/img/icon/paper-plane.svg"
+                                                        alt="img"></span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="form-messages mb-0 mt-3"></p>
+                            </form>
+                            <div id="successMessage" style="display:none; margin-top: 20px;"
+                                class="alert alert-success">
+                                Your enquiry has been successfully submitted!
+                            </div>
+                            <div id="errorMessage" style="display:none; margin-top: 20px;" class="alert alert-danger">
+                                There was an error submitting your enquiry. Please try again.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- location-map -->
+            <!-- <div class="location-map contact-sec-map z-index-common">
+                <div class="contact-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d229858.4526652441!2d46.639722!3d24.774265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f0572a9b0622b%3A0x9c8bb67bb760e2c0!2sRiyadh%2C%20Saudi%20Arabia!5e0!3m2!1sen!2sus!4v1693379453173!5m2!1sen!2sus"
+                        allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="location-map-address bg-theme">
+                    <div class="thumb">
+                        <img src="assets/img/property/property_inner_1.jpg" alt="img">
+                    </div>
+                    <div class="media-body">
+                        <h4 class="title">Address:</h4>
+                        <p class="text">Fzami Arsh Innovations FZCO </p>
+                        <h4 class="title">Dubai Airport Free Zone </h4>
+                        <p class="text">Dubai, United Arab Emirates
+                        </p>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+
+        <!-- location-map -->
+        
+                <div class="row p-3 map-container">
+                    <div id="map" class="w-full">
+                    </div>
+                </div>
+            </div>
+
+        <!--==============================
+	Footer Area
+==============================-->
+
+        <%- include("./partials/footer") -%>
+
+            <!--********************************
+			Code End  Here 
+	******************************** -->
+
+            <!-- Scroll To Top -->
+            <div class="scroll-top">
+                <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+                    <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+                        style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;">
+                    </path>
+                </svg>
+            </div>
+
+            <!--==============================
+    All Js File
+============================== -->
+            <!-- Jquery -->
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+            <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+            <script>
+                $(document).ready(function () {
+                    $('#contactForm').on('submit', function (e) {
+                        e.preventDefault();
+                        $.ajax({
+                            url: $(this).attr('action'),
+                            type: 'POST',
+                            data: $(this).serialize(),
+                            success: function (response) {
+                                console.log('Response:', response);
+                                $('#successMessage').show();
+                                $('#errorMessage').hide();
+                                $('#contactForm')[0].reset();
+                            },
+                            error: function (xhr, status, error) {
+                                console.error('Error:', error);
+                                $('#errorMessage').show();
+                                $('#successMessage').hide();
+                            }
+                        });
+                    });
+                });
+
+                // map location --------->
+                const map = L.map('map').setView([40, 40], 3);
+
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    maxZoom: 5,
+                }).addTo(map);
+
+                const locations = [
+                    { lat: 25.276987, lng: 55.296249, title: 'Dubai' },
+                    { lat: 51.507351, lng: -0.127758, title: 'UK' },
+                    { lat: 28.613939, lng: 77.209023, title: 'India' }
+                ];
+
+                locations.forEach(location => {
+                    L.marker([location.lat, location.lng]).addTo(map)
+                        .bindPopup(location.title);
+                });
+            </script>
+            <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
+            <!-- Swiper Js -->
+            <script src="assets/js/swiper-bundle.min.js"></script>
+            <!-- Bootstrap -->
+            <script src="assets/js/bootstrap.min.js"></script>
+            <!-- Magnific Popup -->
+            <script src="assets/js/jquery.magnific-popup.min.js"></script>
+            <!-- Counter Up -->
+            <script src="assets/js/jquery.counterup.min.js"></script>
+            <!-- Range Slider -->
+            <script src="assets/js/jquery-ui.min.js"></script>
+            <!-- Isotope Filter -->
+            <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+            <script src="assets/js/isotope.pkgd.min.js"></script>
+            <!-- Gsap -->
+            <script src="assets/js/gsap.min.js"></script>
+
+            <!-- Main Js File -->
+            <script src="assets/js/main.js"></script>
 </body>
-
-<!-- Mirrored from themazine.com/html/sap/preview/404.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 22 Jul 2024 06:45:30 GMT -->
 
 </html>
