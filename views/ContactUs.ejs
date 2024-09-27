@@ -51,6 +51,9 @@
 	<!-- Theme Custom CSS -->
 	<link rel="stylesheet" href="assets/css/custom.css">
 	<style>
+		element.style {
+    		
+		}
 		.map-container{
             background-color: rgb(177, 177, 177);
         }
@@ -293,7 +296,7 @@
 				</section>
 
 				<!-- Google Maps - Go to the bottom of the page to change settings and map location. -->
-				<div class="row p-3 map-container">
+				<div class="row px-1 map-container" style="position: relative;">
 					<div id="map" class="w-full">
 					</div>
 				</div>
@@ -326,6 +329,7 @@
 
 	<!-- Theme Initialization Files -->
 	<script src="assets/js/theme.init.js"></script>
+	<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
 	<!-- Examples -->
 	<script src="assets/js/examples/examples.animations.js"></script>
