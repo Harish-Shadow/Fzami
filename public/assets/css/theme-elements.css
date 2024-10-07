@@ -20761,7 +20761,7 @@ ul.history li .featured-box .box-content {
 .toggle.toggle-faqs .toggle > label,
 .toggle.toggle-faqs .toggle > .toggle-title {
 	border: 0;
-	padding-right: 35px;
+	padding-left: 15px;
 }
 
 .toggle.toggle-faqs .toggle > label:before,
@@ -20771,7 +20771,7 @@ ul.history li .featured-box .box-content {
 	border: 0;
 	transform: none;
 	top: 50%;
-	right: 0px;
+	right: 10px;
 	width: auto;
 	height: auto;
 	transform: translateY(-50%);
