@@ -5824,6 +5824,8 @@ html[dir="rtl"] #header .tip-light:before {
 	font-weight: 400;
 	position: relative;
 	top: 1px;
+	text-align: center;
+	justify-content: center;
 }
 
 .page-header .sub-title {
@@ -5873,6 +5875,7 @@ html[dir="rtl"] #header .tip-light:before {
 .page-header.page-header-classic .page-header-title-border {
 	width: 0;
 	height: 5px;
+	
 	position: absolute;
 	bottom: 0;
 	background: transparent;
