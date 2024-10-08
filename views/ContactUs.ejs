@@ -51,9 +51,7 @@
 	<!-- Theme Custom CSS -->
 	<link rel="stylesheet" href="assets/css/custom.css">
 	<style>
-		element.style {
-    		
-		}
+	
 		.map-container{
             background-color: rgb(177, 177, 177);
         }
@@ -144,15 +142,38 @@
 
 				
 				
-
-			</div>
+				 <!-- location-map -->
+				
+				 <div class="row p-3 map-container">
+                    <div id="map" class="w-full">
+                    </div>
+                </div>
+			
 			<!-- footer -->
 			<%- include("./partials/footer") -%>
 
 			<!-- end-footer -->
 	</div>
 
+	<script>
+		// map location --------->
+		 const map = L.map('map').setView([40, 40], 3);
 
+	L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+		maxZoom: 5,
+	}).addTo(map);
+
+	const locations = [
+		{ lat: 25.276987, lng: 55.296249, title: 'Dubai' },
+		{ lat: 51.507351, lng: -0.127758, title: 'UK' },
+		{ lat: 28.613939, lng: 77.209023, title: 'India' }
+	];
+
+	locations.forEach(location => {
+		L.marker([location.lat, location.lng]).addTo(map)
+			.bindPopup(location.title);
+	});
+	</script>
 
 	<!-- Vendor -->
 	<script src="assets/vendor/plugins/js/plugins.min.js"></script>
