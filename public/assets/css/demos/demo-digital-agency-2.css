@@ -812,7 +812,7 @@ html.mobile-menu-opened.sticky-header-active #header.header-transparent .header-
 }
 
 #footer {
-		background-color: var(--secondary) !important;
+		/* background-color: var(--secondary) !important; */
 }
 
 #footer .custom-newsletter {
