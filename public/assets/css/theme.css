@@ -7948,7 +7948,7 @@ html[xmlns] .clearfix {
 }
 
 .text-color-secondary, .text-secondary {
-	color: var(--secondary) !important;
+	color: var(--secondary-100) !important;
 }
 
 .text-color-secondary-100, .text-secondary-100 {
