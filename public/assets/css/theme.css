@@ -6288,6 +6288,7 @@ section.page-header.custom-product {
 .content-grid .content-grid-item .img-fluid {
 	display: inline-block;
 	flex: 0 0 auto;
+	
 }
 
 .content-grid.content-grid-dashed .content-grid-item:before {
