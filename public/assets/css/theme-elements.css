@@ -21259,7 +21259,7 @@ section.timeline .timeline-number {
 	line-height: 55px;
 	margin: 0 auto 10px;
 	border-radius: 100%;
-	background: var(--primary);
+	background: #C5D4FB;
 	z-index: 1;
 }
 @media (max-width:440px) {
