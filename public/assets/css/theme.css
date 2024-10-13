@@ -17282,3 +17282,9 @@ html.gap-outside .pin-wrapper .sticky-wrapper.sticky-effect-active .sticky-body 
 	padding-left: 25px;
 	padding-right: 25px;
 }
+@media (max-width:440px){
+    .ABCD{
+      content: '';
+	  display: block;
+    }
+  }
