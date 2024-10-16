@@ -21205,19 +21205,9 @@ section.timeline:before {
 @media (max-width:440px) {
 
 	section.timeline:before {
-		background: #505050;
-		background: linear-gradient(to bottom, rgba(80, 80, 80, 0) 0%, #505050 8%, #505050 92%, rgba(80, 80, 80, 0) 100%);
-		content: "";
+		
 		display: none;
-		height: 100%;
-		left: 50%;
-		margin-left: -2px;
-		position: absolute;
-		top: -60px;
-		width: 3px;
-		z-index: 0;
-		filter: alpha(opacity=35);
-		opacity: 0.35;
+		
 	}
 }
 

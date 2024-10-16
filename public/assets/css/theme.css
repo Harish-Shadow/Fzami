@@ -1365,6 +1365,13 @@ html #header.header-transparent {
 	position: absolute;
 }
 
+@media (max-width:800px) {
+	html #header.header-transparent {
+		position: fixed;
+	}
+	
+}
+
 html #header.header-transparent .header-body:not(.header-border-bottom) {
 	border-bottom: 0;
 }
@@ -5200,7 +5207,7 @@ html[dir="rtl"] #header .tip-light:before {
 /* Header Button Collapse - Skin */
 #header .header-btn-collapse-nav {
 	background: var(--primary);
-	position:sticky;
+	position:sticky;:
 }
 
 /* Header Nav Main - Skin */
