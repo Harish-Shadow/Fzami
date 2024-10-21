@@ -52,9 +52,32 @@
 		<!-- Theme Custom CSS -->
 		<link rel="stylesheet" href="assets/css/custom.css">
 		<style>
+			.about-img{
+			max-width: 550px;
+			}
 			@media (max-width: 500px) {
 				.toggle-rows {
 					display: none;
+				}
+				.about-img{
+					width: 100%;
+				}
+				
+			}
+
+			@media (min-width :501px) {
+				.btnne{
+					display: none;
+				}
+				.btn-container{
+					display: none;
+				}
+				
+			}
+			@media (max-width:500px ) {
+				.btnne{
+					display:  block;
+
 				}
 			}
 		</style>
@@ -77,7 +100,28 @@
 						</div>
 						<div class="container py-3 py-lg-5 p-relative z-index-1">
 							<div class="row py-3">
-								<div class="text-center text-lg-start col-lg-6 py-5">
+								<div class="col text-lg-end mt-3 mt-lg-0 px-3 px-lg-0 custom-pos-2 just py- my-1 order-lg-2" style="padding-top: 100px; background:transparent ;">
+
+									 
+										
+										
+											
+									<div class="p-relative z-index-1 appear-animation" style="display: grid; justify-content: center; align-items: center; background: transparent;"
+										data-appear-animation="fadeInUpShorter"
+										data-appear-animation-delay="400">
+										<div data-plugin-float-element
+											data-plugin-options="{'minWidth': 0, 'startPos': 'bottom', 'speed': 6.0, 'transition': true, 'transitionDuration': 1000}" style="background: transparent;">
+											<div
+												class="custom-box-1 p-relative custom-pos-12 d-inline-block p-relative bg-light custom-border-radius-1 border-0 text-center " >
+												<img src="assets/img/Home - banner.png"
+													alt="" class="img about-img" style="height: 100%; border-radius: 2px;"  >
+											</div>
+										</div>
+									</div>
+								
+							
+								</div>
+								<div class="text-center text-lg-start col-lg-6 py-5 order-lg-1">
 									<div class="overflow-hidden">
 										<div class="appear-animation" data-appear-animation="maskUp"
 											data-appear-animation-delay="0">
@@ -158,27 +202,7 @@
 											class="btn btn-modern btn-effect-4 btn-rounded btn-dark text-transform-none text-3 font-weight-medium mt-2 mb-2">Lets Talk <i class="fas fa-arrow-right rotate-l-45 ms-2"></i></a>
 									</div>
 								</div>
-								<div class="col text-lg-end mt-3 mt-lg-0 px-3 px-lg-0 custom-pos-2 just py- my-1" style="padding-top: 100px; background:transparent ;">
-
-									 
-										
-										
-											
-											<div class="p-relative z-index-1 appear-animation" style="display: grid; justify-content: center; align-items: center; background: transparent;"
-												data-appear-animation="fadeInUpShorter"
-												data-appear-animation-delay="400">
-												<div data-plugin-float-element
-													data-plugin-options="{'minWidth': 0, 'startPos': 'bottom', 'speed': 6.0, 'transition': true, 'transitionDuration': 1000}" style="background: transparent;">
-													<div
-														class="custom-box-1 p-relative custom-pos-12 d-inline-block p-relative bg-light custom-border-radius-1 border-0 text-center " >
-														<img src="assets/img/Home - banner.png"
-															alt="" class="img" style="height: 100%; width: 450px; border-radius: 20px;"  >
-													</div>
-												</div>
-											</div>
-										
-									
-								</div>
+								
 							</div>
 						</div>
 					</div>
@@ -439,7 +463,7 @@
 						</div>
 					</div>
 					<!-- Button for mobile view only -->
-					<div class="text-center my-4 d-block d-md-none">
+					<div class="text-center my-4 d-block d-md-none btn-container">
 						<button id="toggleRows" class="btn btn-primary">Show More</button>
 					</div>
 				
@@ -921,8 +945,8 @@
 													training. I had an opportunity to learn RPA through other companies,
 													but Blue Prism RPA is much practical and easier to implement. Gives
 													us more scalability to automate</p>
-												<p class="mb-0"><i class="fas fa-star custom-text-color-2 text-2"></i><i
-														class="fas fa-star custom-text-color-2 text-2"></i><i
+												<p class="mb-0" style="color: #FFDF00"><i class="fas fa-star custom-text-color-2 text-2" style="color: #FFDF00"></i><i
+														class="fas fa-star custom-text-color-2 text-2 " ></i><i
 														class="fas fa-star custom-text-color-2 text-2"></i><i
 														class="fas fa-star custom-text-color-2 text-2"></i><i
 														class="fas fa-star custom-text-color-2 text-2"></i></p>
@@ -942,11 +966,11 @@
 											</div>
 											<div class="px-4 mx-2 pt-2 pb-3">
 												<p>We are honored to have you as part of Blue Prism University Academia Program in partnership with Netalla Innovations Pvt. Ltd., our authorized academia partner. We are confident you will bring the Connected-RPA skills and knowledge to your instructors and students. Congratulations!</p>
-												<p class="mb-0"><i class="fas fa-star custom-text-color-2 text-2"></i><i
-														class="fas fa-star custom-text-color-2 text-2"></i><i
-														class="fas fa-star custom-text-color-2 text-2"></i><i
-														class="fas fa-star custom-text-color-2 text-2"></i><i
-														class="fas fa-star custom-text-color-2 text-2"></i></p>
+												<p class="mb-0"><i class="fas fa-star custom-text-color-2 text-2" style="color: #FFDF00"></i><i
+														class="fas fa-star custom-text-color-2 text-2" style="color: #FFDF00"></i><i
+														class="fas fa-star custom-text-color-2 text-2 "style="color: #FFDF00"></i><i
+														class="fas fa-star custom-text-color-2 text-2" style="color: #FFDF00"></i><i
+														class="fas fa-star custom-text-color-2 text-2" ></i></p>
 											</div>
 										</div>
 									</div>
@@ -954,7 +978,7 @@
 							</div>
 							<div class="appear-animation" data-appear-animation="fadeInUpShorter"
 								data-appear-animation-delay="200">
-								<div class="card border-radius-2 bg-color-light border-0 box-shadow-9">
+								<div class="card border-radius-2 bg-color-light border-0 box-shadow-9" style="color: #FFDF00">
 									<div class="card-body py-3 px-2">
 										<div class="testimonial testimonial-style-4 border-0 box-shadow-none m-0 p-0">
 											<div class="testimonial-author pb-3">
@@ -963,7 +987,7 @@
 											</div>
 											<div class="px-4 mx-2 pt-2 pb-3">
 												<p>This training by Netalla helped us to get inclined towards the RPA technology. We could see the output immediately as we complete the coding and that motivated me as a technical person</p>
-												<p class="mb-0"><i class="fas fa-star custom-text-color-2 text-2"></i><i
+												<p class="mb-0" style="color: #FFDF00"><i class="fas fa-star custom-text-color-2 text-2"></i><i
 														class="fas fa-star custom-text-color-2 text-2"></i><i
 														class="fas fa-star custom-text-color-2 text-2"></i><i
 														class="fas fa-star custom-text-color-2 text-2"></i><i
@@ -993,26 +1017,28 @@
 	</div>
 	<script>
 		document.getElementById("toggleRows").addEventListener("click", function() {
-			var rows = document.querySelectorAll('.toggle-rows');
-			rows.forEach(function(row) {
-				if (window.innerWidth <= 500) {
-					// Toggle display for mobile view
-					row.style.display = row.style.display === "none" || row.style.display === "" ? "block" : "none";
-				}
-			});
-			// Change button text based on visibility
-			this.textContent = this.textContent === "Show More" ? "Show Less" : "Show More";
-		});
-	
-		// Initially hide rows on mobile view
-		window.onload = function() {
-			if (window.innerWidth <= 500) {
-				var rows = document.querySelectorAll('.toggle-rows');
-				rows.forEach(function(row) {
-					row.style.display = "none";
-				});
-			}
-		};
+    var rows = document.querySelectorAll('.toggle-rows');
+    rows.forEach(function(row) {
+        if (window.innerWidth <= 500) {
+            // Toggle display for mobile view
+            row.style.display = row.style.display === "none" || row.style.display === "" ? "flex" : "none";
+        }
+    });
+    // Change button text based on visibility
+    this.textContent = this.textContent === "Show More" ? "Show Less" : "Show More";
+});
+
+// Initially hide rows on mobile view
+window.onload = function() {
+    if (window.innerWidth <= 500) {
+        var rows = document.querySelectorAll('.toggle-rows');
+        rows.forEach(function(row) {
+            row.style.display = "none";
+        });
+    }
+};
+
+		
 	</script>
 		<script src="assets/vendor/plugins/js/plugins.min.js"></script>
 		<script src="assets/vendor/gsap/gsap.min.js"></script>
