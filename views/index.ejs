@@ -78,38 +78,24 @@
 				.btnne{
 					display:  block;
 				}
-				.grid-container{
-					justify-items: center;
-				}
 				}
 			
 	
 			.grid-container {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
+            grid-template-columns: repeat(2, 1fr);
             gap: 10px; /* Adjust the gap between items as needed */
-            width: min-content;
-            height: min-content;
-			align-items: center;
-			justify-items: center; /* Full viewport height */
+
         }
 		@media (max-width: 768px) {
     .grid-container {
         margin: 0 auto; /* Centers the grid horizontally */
         padding: 20px; /* Adds some padding around the grid */
-       
-        grid-template-rows: auto; /* Adjusts row size automatically */
-        justify-items: center; /* Centers the items horizontally */
+       /* Centers the items horizontally */
     }
 }
         .grid-item {
             
-            justify-content: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #ffffff;
         }
 		</style>
 	</head>
