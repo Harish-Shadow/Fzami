@@ -77,9 +77,40 @@
 			@media (max-width:500px ) {
 				.btnne{
 					display:  block;
-
 				}
-			}
+				.grid-container{
+					justify-items: center;
+				}
+				}
+			
+	
+			.grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 10px; /* Adjust the gap between items as needed */
+            width: min-content;
+            height: min-content;
+			align-items: center;
+			justify-items: center; /* Full viewport height */
+        }
+		@media (max-width: 768px) {
+    .grid-container {
+        margin: 0 auto; /* Centers the grid horizontally */
+        padding: 20px; /* Adds some padding around the grid */
+       
+        grid-template-rows: auto; /* Adjusts row size automatically */
+        justify-items: center; /* Centers the items horizontally */
+    }
+}
+        .grid-item {
+            
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+        }
 		</style>
 	</head>
 
@@ -140,61 +171,57 @@
 												class="bg-transparent d-inline-block p-0 mark mark-color mark-color-tertiary">Through</mark>
 											<strong>Technology</strong> & <strong>Education</strong></h2>
 									</div>
-
-									<div class="d-flex mb-4 justify-content-center justify-content-lg-start">
-										<div class="feature-box align-items-center me-4 appear-animation"
-											data-appear-animation="fadeInUpShorter" data-appear-animation-delay="0">
+									<div class="main boxes justify-content-center">
+									<div class="grid-container ml-sm-5 mb-3">
+										<div class="grid-item feature-box align-items-center me-4 appear-animation"
+										data-appear-animation="fadeInUpShorter" data-appear-animation-delay="0">
 											<div
-												class="feature-box-icon box-shadow-2 bg-light border custom-border-color-1">
-												<i class="fa-solid fa-check-double text-secondary"></i>
-											</div>
-											<div class="feature-box-info line-height-2 ps-2 ">
-												<span class="text-4 font-weight-small text-dark negative-ls-05">IT
-													Infrastructure</span>
-											</div>
+											class="feature-box-icon box-shadow-2 bg-light border custom-border-color-1">
+											<i class="fa-solid fa-check-double text-secondary"></i>
 										</div>
-
-										<div class="feature-box align-items-center appear-animation"
-											data-appear-animation="fadeInUpShorter" data-appear-animation-delay="0">
-											<div
-												class="feature-box-icon box-shadow-2 bg-light border custom-border-color-1">
-												<i class="fa-solid fa-check-double text-secondary"></i>
-											</div>
-											<div class="feature-box-info line-height-2 ps-2">
-												<span
-													class="text-4 font-weight-medium text-dark negative-ls-05">Academic
-													Training</span>
-											</div>
+										<div class="feature-box-info line-height-2 ps-2 ">
+											<span class="text-4 font-weight-small text-dark negative-ls-05">IT
+												Infrastructure</span>
 										</div>
-
 									</div>
-									<div class="d-flex mb-4 justify-content-center justify-content-lg-start">
-										<div class="feature-box align-items-center me-4 appear-animation"
-											data-appear-animation="fadeInUpShorter" data-appear-animation-delay="0">
+										<div class="grid-item feature-box align-items-center me-4 appear-animation"
+										data-appear-animation="fadeInUpShorter" data-appear-animation-delay="0">
 											<div
-												class="feature-box-icon box-shadow-2 bg-light border custom-border-color-1">
-												<i class="fa-solid fa-check-double text-secondary"></i>
-											</div>
-											<div class="feature-box-info line-height-2 ps-2">
-												<span
-													class="text-4 font-weight-medium text-dark negative-ls-05">E-Classroom</span>
-											</div>
+											class="feature-box-icon box-shadow-2 bg-light border custom-border-color-1">
+											<i class="fa-solid fa-check-double text-secondary"></i>
 										</div>
-
-										<div class="feature-box align-items-center appear-animation pl-4" style="padding-left: 30px;"
-											data-appear-animation="fadeInUpShorter" data-appear-animation-delay="0">
-											<div
-												class="feature-box-icon box-shadow-2 bg-light border custom-border-color-1">
-												
-												<i class="fa-solid fa-check-double text-secondary"></i>
-											</div>
-											<div class="feature-box-info line-height-2 ps-2" href:"\Gen_AI">
-												<span class="text-4 font-weight-medium text-dark negative-ls-05">Gen
-													AI</span>
-											</div>
+										<div class="feature-box-info line-height-2 ps-2">
+											<span
+												class="text-4 font-weight-medium text-dark negative-ls-05">Academic
+												Training</span>
 										</div>
-
 									</div>
+										<div class="grid-item feature-box align-items-center me-4 appear-animation"
+										data-appear-animation="fadeInUpShorter" data-appear-animation-delay="0">
+											<div
+											class="feature-box-icon box-shadow-2 bg-light border custom-border-color-1">
+											<i class="fa-solid fa-check-double text-secondary"></i>
+										</div>
+										<div class="feature-box-info line-height-2 ps-2">
+											<span
+												class="text-4 font-weight-medium text-dark negative-ls-05">E-Classroom</span>
+										</div>
+									</div>
+										<div class="grid-item feature-box align-items-center me-4 appear-animation"
+										data-appear-animation="fadeInUpShorter" data-appear-animation-delay="0"><div
+											class="feature-box-icon box-shadow-2 bg-light border custom-border-color-1">
+											
+											<i class="fa-solid fa-check-double text-secondary"></i>
+										</div>
+										<div class="feature-box-info line-height-2 ps-2" >
+											<span class="text-4 font-weight-medium text-dark negative-ls-05">
+												Gen AI
+											</span>
+										</div>
+									</div>
+									</div>
+								</div>
+									
 
 									<div class="appear-animation" data-appear-animation="fadeInUpShorter"
 										data-appear-animation-delay="500">
@@ -634,7 +661,7 @@
 							</div>
 							<div class="appear-animation" data-appear-animation="fadeInUpShorter"
 								data-appear-animation-delay="400">
-								<p>At Revonnate, we empower organizations to elevate their digital potential and optimize operations, providing innovative, customized solutions that drive smarter, faster, and more efficient growth in a dynamic world.</p>
+								<p>At Fzami, we empower organizations to elevate their digital potential and optimize operations, providing innovative, customized solutions that drive smarter, faster, and more efficient growth in a dynamic world.</p>
 							</div>
 							<div class="appear-animation" data-appear-animation="fadeInUpShorter"
 								data-appear-animation-delay="600">
@@ -904,7 +931,7 @@
 									</div>
 									<div class="appear-animation" data-appear-animation="fadeInUpShorter"
 										data-appear-animation-delay="400">
-										<p>At Revonnate, we empower organizations by transforming their digital capabilities and enhancing operational efficiency.</p>
+										<p>At Fzami, we empower organizations by transforming their digital capabilities and enhancing operational efficiency.</p>
 									</div>
 
 									<div class="appear-animation" data-appear-animation="fadeInUpShorter"
