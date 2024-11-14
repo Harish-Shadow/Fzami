@@ -18,6 +18,7 @@ app.get("/", (req, res) => {
   res.render("index");
 });
 app.get("/ContactUs", (req, res) => res.render("ContactUs"));
+app.get("/index", (req, res) => res.render("index"));
 app.get("/about", (req, res) => res.render("about"));
 app.get("/DigitalTransformation", (req, res) => res.render("DigitalTransformation"));
 app.get("/AcademicTraining", (req, res) => res.render("AcademicTraining"));
@@ -25,8 +26,8 @@ app.get("/EClassroomSolutions", (req, res) => res.render("EClassroomSolutions"))
 app.get("/Gallery", (req, res) => res.render("Gallery"));
 app.get("/Gen_AI", (req, res) => res.render("Gen_AI"));
 app.get("/IndustrySolutions", (req, res) => res.render("IndustrySolutions"));
-app.get("/IT", (req, res) => res.render("IT"));
-app.get("/sevices", (req, res) => res.render("sevices"));
+app.get("/InformationTechnology", (req, res) => res.render("InformationTechnology"));
+app.get("/services", (req, res) => res.render("services"));
 app.get("/privecy", (req, res) => res.render("privacey"));
 app.get("/404", (req, res) => res.render("404"));
 
