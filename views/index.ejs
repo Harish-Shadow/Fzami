@@ -64,16 +64,16 @@
 				}
 				
 			}
-
-			@media (min-width :501px) {
-				.btnne{
+/* 
+			@media (min-width :501px) and (max-width :750px){
+				.btn{
 					display: none;
 				}
 				.btn-container{
 					display: none;
 				}
 				
-			}
+			} */
 			@media (max-width:500px ) {
 				.btnne{
 					display:  block;
@@ -94,9 +94,8 @@
         }
 		@media (max-width: 768px) {
     .grid-container {
-        margin: 0 auto; /* Centers the grid horizontally */
-        padding: 20px; /* Adds some padding around the grid */
-       /* Centers the items horizontally */
+        margin: 0 auto; 
+        padding: 20px; 
     }
 }
         .grid-item {
@@ -163,7 +162,7 @@
 											<strong>Technology</strong> & <strong>Education</strong></h2>
 									</div>
 									<div class="main boxes justify-content-center">
-									<div class="grid-container ml-sm-5 mb-3">
+									<div class="grid-container ml-sm-5 mb-3 text-start">
 										<div class="grid-item feature-box align-items-center me-4 appear-animation"
 										data-appear-animation="fadeInUpShorter" data-appear-animation-delay="0">
 											<div
@@ -617,7 +616,7 @@
 										
 										<div
 											class="w-100 text-center p-absolute pt-5 opacity-0 bottom-30 left-0 transformY-p100 anim-hover-inner-opacity-10 anim-hover-inner-translate-top-0px transition-4ms">
-											<a href="/ContactUs"
+											<a href="/DigitalTransformation"
 										class="btn btn-rounded box-shadow-7 font-weight-medium btn-swap-1 text-primary"
 										data-clone-element="1">
 										<span>View More<i
@@ -1071,7 +1070,7 @@
 		document.getElementById("toggleRows").addEventListener("click", function() {
     var rows = document.querySelectorAll('.toggle-rows');
     rows.forEach(function(row) {
-        if (window.innerWidth <= 500) {
+        if (window.innerWidth <= 770) {
             // Toggle display for mobile view
             row.style.display = row.style.display === "none" || row.style.display === "" ? "flex" : "none";
         }
@@ -1082,7 +1081,7 @@
 
 // Initially hide rows on mobile view
 window.onload = function() {
-    if (window.innerWidth <= 500) {
+    if (window.innerWidth <= 770) {
         var rows = document.querySelectorAll('.toggle-rows');
         rows.forEach(function(row) {
             row.style.display = "none";

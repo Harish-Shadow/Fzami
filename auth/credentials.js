@@ -4,12 +4,12 @@ const TELEGRAM_CHAT_ID = "-";
 
 // Mail Bot Credentials
 const MAIL_BOT_ID = "mailtrscbe@gmail.com";
-const MAIL_BOT_PASSWORD = "mquzkrnblouztdro";
+const MAIL_BOT_PASSWORD = "jkdkseaqrzsgduao";
 const ADMIN_MAIL_ID = "revonnate@gmail.com";
 
 // Site Name
 const COMPANY_INFO = {
-  name: "go_saavari",
+  name: "Fzami_World",
   website: "https://revonnate.com",
   mobile: "9986834563",
   email: ADMIN_MAIL_ID,

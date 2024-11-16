@@ -15,7 +15,7 @@ const transporter = nodemailer.createTransport({
 const POST_MAN = async (toEmails, subject, htmlFile) => {
   const mailOptions = {
     from: MAIL_BOT_ID,
-    to: 'themanikandan.trs@gmail.com',
+    to: 'arataakio1@gmail.com',
     subject: `${subject}`,
     html: htmlFile,
   };
@@ -31,6 +31,7 @@ const POST_MAN = async (toEmails, subject, htmlFile) => {
 };
 
 const sendEnquiry = async (data) => {
+  console.log("Enquiry sent: ", data)
   try {
     const htmlFile = await ejs.renderFile(
       path.join(__dirname,"mail", "enquiry.mail.ejs"),

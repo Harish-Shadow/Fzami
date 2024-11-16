@@ -27,6 +27,9 @@
 			rel="stylesheet" type="text/css">
 
 		<!-- Vendor CSS -->
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+			rel="stylesheet">
 		<link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
 		<link rel="stylesheet" href="assets/vendor/fontawesome-free/css/all.min.css">
 		<link rel="stylesheet" href="assets/vendor/animate/animate.compat.css">
@@ -64,6 +67,42 @@
             height: 300px;
             width: 100%;
         }
+		.input-group{
+			align-items: center;
+			
+		}
+		/* Customize icon background and alignment */
+.input-group .input-group-text {
+   background-color: transparent;
+   border: none;
+   padding-right: 0.5rem;
+   color: #ffffff; 
+}
+
+.input-group .icon-background {
+   display: flex;
+   align-items: center;
+   color: #ffffff; /* Lighter icon color */
+}
+
+.form-control {
+   border: none;
+   border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Light border for inputs */
+   background: transparent;
+   color: #ffffff;
+}
+
+/* Placeholder color */
+.form-control::placeholder {
+   color: rgba(255, 255, 255, 0.6); /* Lighter placeholder color */
+}
+
+/* Button styling */
+.btn-dark {
+   background-color: #000; /* Dark background for button */
+   color: #ffffff;
+}
+
 	</style>
 	</head>
 
@@ -104,11 +143,11 @@
 								<h3 class="text-10 text-light">Send a Message</h3>
 							</div>
 						</div>
-						<div class="row ">
+						<div class="row">
 							<div class="col">
-								<form
-									class="contact-form form-style-4 form-style-4-border-light-2 form-errors-light pe-lg-5"
-									action="php/contact-form.php" method="POST">
+								<form class="contact-form" id="contactForm" action="/contact1"
+									method="POST">
+									<!-- Success/Error Alerts -->
 									<div class="contact-form-success alert alert-success d-none mt-4">
 										<strong>Success!</strong> Your message has been sent to us.
 									</div>
@@ -116,35 +155,76 @@
 										<strong>Error!</strong> There was an error sending your message.
 										<span class="mail-error-message text-1 mt-2 d-block"></span>
 									</div>
-									<div class="row mb-2 mx-0">
-										<input type="text"
-											class="form-control text-3-5 text-color-light px-1 py-3"
-											name="name" placeholder="* Full Name"
-											data-msg-required="This field is required." id="name" required />
+
+									<!-- Name Field -->
+									<div class="row mb-2 mx-0 align-items-center">
+										<div class="input-group">
+											<div class="input-group-prepend">
+												<span class="input-group-text icon-background"><i
+														class="fas fa-user"></i></span>
+											</div>
+											<input type="text"
+												class="form-control text-3-5  px-1 py-3"
+												name="name" id="name" placeholder="Your Name*" required />
+										</div>
 									</div>
-									<div class="row mx-0 mb-3">
-										<input type="email"
-											class="form-control text-3-5 text-color-light px-1 py-3"
-											name="email" placeholder="* Email Address"
-											data-msg-required="This field is required." id="email" required />
+
+									<!-- Email Field -->
+									<div class="row mb-2 mx-0 align-items-center">
+										<div class="input-group">
+											<div class="input-group-prepend">
+												<span class="input-group-text icon-background"><i
+														class="fas fa-envelope"></i></span>
+											</div>
+											<input type="email"
+												class="form-control text-3-5  px-1 py-3"
+												name="email" id="email" placeholder="Your Email*" required />
+										</div>
 									</div>
-									<div class="row mb-2 mx-0">
-										<input type="text"
-											class="form-control text-3-5 text-color-light px-1 py-3"
-											name="number" placeholder="* Contact No"
-											data-msg-required="This field is required." id="number" required />
+
+									<!-- Phone Field -->
+									<div class="row mb-2 mx-0 align-items-center">
+										<div class="input-group">
+											<div class="input-group-prepend">
+												<span class="input-group-text icon-background"><i
+														class="fas fa-phone"></i></span>
+											</div>
+											<input type="text"
+												class="form-control text-3-5  px-1 py-3"
+												name="phno" id="phno" placeholder="Your Phone Number*" required />
+										</div>
 									</div>
-									<div class="row mb-4 mx-0">
+
+									<!-- Message Field -->
+									<div class="row mb-4 row mb-2 mx-0   ">
+										<div class="input-group" style="align-items: start !important;">
+											<div class="input-group-prepend pt-2">
+												<span class="input-group-text icon-background"><i class="fa-solid fa-comments"></i></span>
+											</div>
 										<textarea name="message" id="message" rows="4"
-											class="form-control form-control text-3-5 text-color-light px-1"
-											placeholder=" Message"></textarea>
+											class="form-control ml-5 text-3-5  px-1"
+											placeholder="Message"></textarea>
+									
+										</div>
 									</div>
+									<!-- Submit Button -->
 									<input type="submit"
 										class="btn btn-modern btn-effect-4 btn-rounded btn-dark text-transform-none text-3 font-weight-medium mt-2 mb-2"
 										value="Send Message" />
 								</form>
+
+								<!-- Alerts -->
+								<div id="successMessage" style="display:none; margin-top: 20px;"
+									class="alert alert-success">
+									Your enquiry has been successfully submitted!
+								</div>
+								<div id="errorMessage" style="display:none; margin-top: 20px;"
+									class="alert alert-danger">
+									There was an error submitting your enquiry. Please try again.
+								</div>
 							</div>
 						</div>
+
 					</div>
 				</section>
 
@@ -161,14 +241,13 @@
 				<%- include("./partials/footer") -%>
 
 				<!-- end-footer -->
-				
+
 			</div>
 
-		
-            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+			<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 			<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 			<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-			
+
 			<script>
                 $(document).ready(function () {
                     $('#contactForm').on('submit', function (e) {
@@ -210,34 +289,33 @@
                         .bindPopup(location.title);
                 });
             </script>
-		
 
-		<!-- Vendor -->
-		<script src="assets/vendor/plugins/js/plugins.min.js"></script>
-		<script src="assets/vendor/gsap/gsap.min.js"></script>
-		<script src="assets/vendor/gsap/ScrollTrigger.min.js"></script>
+			<!-- Vendor -->
+			<script src="assets/vendor/plugins/js/plugins.min.js"></script>
+			<script src="assets/vendor/gsap/gsap.min.js"></script>
+			<script src="assets/vendor/gsap/ScrollTrigger.min.js"></script>
 
-		<!-- Theme Base, Components and Settings -->
-		<script src="assets/js/theme.js"></script>
+			<!-- Theme Base, Components and Settings -->
+			<script src="assets/js/theme.js"></script>
 
-		<!-- Demo -->
-		<script src="assets/js/demos/demo-marketing-1.js"></script>
+			<!-- Demo -->
+			<script src="assets/js/demos/demo-marketing-1.js"></script>
 
-		<!-- Current Page Vendor and Views -->
-		<script src="assets/js/views/view.contact.js"></script>
+			<!-- Current Page Vendor and Views -->
+			<script src="assets/js/views/view.contact.js"></script>
 
-		<!-- Theme Custom -->
-		<script src="assets/js/custom.js"></script>
+			<!-- Theme Custom -->
+			<script src="assets/js/custom.js"></script>
 
-		<!-- Theme Initialization Files -->
-		<script src="assets/js/theme.init.js"></script>
-		<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+			<!-- Theme Initialization Files -->
+			<script src="assets/js/theme.init.js"></script>
+			<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
-		<!-- Examples -->
-		<script src="assets/js/examples/examples.animations.js"></script>
+			<!-- Examples -->
+			<script src="assets/js/examples/examples.animations.js"></script>
 
-		<!-- Google Maps -->
-		<script>
+			<!-- Google Maps -->
+			<script>
 
 		/* 
 		Map Markers:
@@ -312,10 +390,10 @@
 				.bindPopup(location.title);
 		});			
 	</script>
-		<script>
+			<script>
 
 
 	</script>
-	</body>
+		</body>
 
-</html>
+	</html>
